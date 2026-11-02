@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 名前・紹介文を自分の内容に変更してください -->
+  <title>Portfolio</title>
+  <meta name="description" content="ポートフォリオ。研究・制作物・スキルを紹介します。">
+  <style>
+    :root { color-scheme: light; --accent: #1d4ed8; }
+    * { box-sizing: border-box; }
+    body {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 64px 24px 32px;
+      font-family: system-ui, -apple-system, "Noto Sans JP", sans-serif;
+      line-height: 1.85;
+      color: #20252b;
+      background: #fff;
+      overflow-wrap: anywhere;
+    }
+    a { color: var(--accent); text-underline-offset: 4px; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    header { padding-bottom: 32px; }
+    .label { margin: 0; font-size: 12px; letter-spacing: .18em; color: #667085; }
+    h1 { margin: 8px 0; font-size: clamp(30px, 7vw, 42px); line-height: 1.4; }
+    .intro { margin: 0 0 20px; color: #59636e; }
+    nav { display: flex; flex-wrap: wrap; gap: 12px 24px; font-size: 14px; }
+    section { padding: 28px 0; border-top: 1px solid #e5e7eb; scroll-margin-top: 24px; }
+    h2 { margin: 0 0 16px; font-size: 20px; }
+    h3 { margin: 0 0 6px; font-size: 17px; }
+    p { margin: 0 0 12px; }
+    article + article { margin-top: 24px; }
+    .skills { margin-top: 20px; font-size: 14px; color: #59636e; }
+    .links { margin: 0; padding-left: 1.25em; }
+    .links li + li { margin-top: 8px; }
+    footer { border-top: 1px solid #e5e7eb; padding-top: 20px; font-size: 12px; color: #667085; }
+    @media (max-width: 480px) { body { padding-top: 36px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="label">PORTFOLIO</p>
+    <h1>Portfolio</h1>
+    <p class="intro"></p>
+    <nav aria-label="ページ内メニュー">
+      <a href="#about">自己紹介</a>
+      <a href="#projects">研究・制作物</a>
+      <a href="#links">リンク</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>自己紹介</h2>
+      <p>学んでいる分野や興味のあることを、2〜3文で紹介します。</p>
+      <p class="skills"><strong>スキル：</strong>得意な言語・ツール・技術を記載</p>
+    </section>
+
+    <section id="projects">
+      <h2>研究・制作物</h2>
+      <!-- article をコピーすると、項目を追加できます -->
+      <article>
+        <h3>研究テーマ</h3>
+        <p>研究の目的、取り組んでいる課題、自分が担当した内容を簡潔に記載します。</p>
+      </article>
+      <article>
+        <h3>制作物・活動のタイトル</h3>
+        <p>何を作り、どのような工夫をしたかを記載します。</p>
+        <!-- 公開できるリポジトリのURLに変更してください -->
+        <a href="https://github.com/YOUR_USERNAME/YOUR_REPOSITORY">ソースコードを見る</a>
+      </article>
+    </section>
+
+    <section id="links">
+      <h2>リンク</h2>
+      <!-- YOUR_USERNAME とメールアドレスを変更してください -->
+      <ul class="links">
+        <li><a href="https://github.com/YOUR_USERNAME">GitHub</a></li>
+        <li><a href="mailto:you@example.com">メールで連絡する</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer><small>&copy; あなたの名前</small></footer>
+</body>
+</html>
+
